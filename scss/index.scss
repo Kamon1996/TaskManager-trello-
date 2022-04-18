@@ -1,0 +1,54 @@
+@import './consts/colors';
+@import './consts/null';
+@import './consts/fonts';
+@import './consts/wrapper';
+@import './consts/buttons';
+
+@import '../js/components/Header/Header';
+@import '../js/components/Main/Main';
+@import '../js/components/Main/components/addNewList';
+@import '../js/components/Main/components/Modal-info';
+
+.list-item {
+  .list-title {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+  }
+
+  .list-more-popup {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 75px;
+    border: 1px solid #ebeff4;
+    box-shadow: -10px 10px 30px rgba(39, 51, 79, 0.1);
+    border-radius: 3px;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.editeble {
+  background: $white !important;
+  outline: 2px solid #c9cdd9;
+  border-radius: 3px;
+  color: #27334f !important;
+  cursor: auto !important;
+  outline-style: auto;
+}
+
+.hidden-x {
+  overflow-x: hidden;
+}
+
+.dragging {
+  opacity: 0.4;
+  box-shadow: 0px 0px 5px 5px #8ae59e;
+}

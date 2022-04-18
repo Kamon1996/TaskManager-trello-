@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
+
+body,
+a {
+  font-family: 'Hind', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+h3,
+h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+}
+h6 {
+}
+
+p,
+a {
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}

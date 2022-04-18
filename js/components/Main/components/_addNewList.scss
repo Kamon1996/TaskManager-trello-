@@ -1,0 +1,28 @@
+.main {
+  .enter-list-title,
+  .enter-card-title {
+    min-width: 320px;
+    padding: 10px;
+  }
+  .enter-list-title {
+    background: #ffffff;
+    border: 1px solid #ebeff4;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .list-title-input,
+  .card-title-input {
+    width: -webkit-fill-available;
+    background: #ffffff;
+    border: 2px solid #c9cdd9;
+    border-radius: 5px;
+    padding: 18px 16px;
+    resize: none;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

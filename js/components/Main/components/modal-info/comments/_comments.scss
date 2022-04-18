@@ -1,0 +1,44 @@
+.modal {
+  &-wrapper {
+    .activity {
+      &-all-comments {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+
+        .comment-item {
+          &-time {
+            color: #a8b0c2;
+            margin-bottom: 10px;
+          }
+
+          &-text {
+            color: #525c72;
+            margin-bottom: 10px;
+          }
+
+          &-buttons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            & > * {
+              position: relative;
+              &:not(:last-child)::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 130%;
+                transform: translateY(-50%);
+                width: 4px;
+                height: 1px;
+                background-color: #a8b0c2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

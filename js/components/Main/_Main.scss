@@ -1,0 +1,82 @@
+.main {
+  padding: 121px 10px 100px 0px;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  position: absolute;
+  min-width: 100%;
+  top: 0;
+  min-height: 75%;
+  z-index: 0;
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  &__lists {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+
+    .list-item {
+      min-width: 320px;
+
+      background: $white;
+      border: 1px solid #ebeff4;
+      border-radius: 5px;
+      &-head {
+        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 13px;
+        .list-title {
+          cursor: default;
+          background-color: inherit;
+          color: $white;
+        }
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 10px 10px 10px;
+
+        .card-item {
+          padding: 20px;
+          transition: 0.3s;
+          cursor: pointer;
+
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          min-width: 200px;
+          min-height: 125px;
+          background: $white;
+          border: 1px solid #ebeff4;
+          border-radius: 5px;
+
+          .card-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &-data {
+              color: $gray;
+            }
+          }
+
+          .card-title {
+            color: #27334f;
+          }
+
+          &:hover {
+            border: 1px solid #27334f;
+          }
+        }
+      }
+    }
+  }
+}

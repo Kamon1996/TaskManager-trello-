@@ -1,0 +1,103 @@
+@import './modal-info/comments/comments.scss';
+
+.modal {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  background: #e5e5e5;
+  z-index: 999;
+  width: 100vw;
+  min-height: -webkit-fill-available;
+
+  &-wrapper {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: $white;
+    padding: 40px 50px 50px 45px;
+
+    i.modal-close {
+      top: 25px;
+      right: 25px;
+      position: absolute;
+      font-size: 16px;
+      color: #c9cdd9;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    i.task-delete {
+      top: 25px;
+      right: 80px;
+      position: absolute;
+      font-size: 16px;
+      color: #e4947b;
+      padding: 8px;
+      cursor: pointer;
+      &:hover {
+        color: #d86340;
+      }
+    }
+  }
+
+  &-title {
+    color: #27334f;
+    margin-bottom: 5px;
+    padding: 5px;
+    max-width: 50%;
+    &:focus {
+      background: $white !important;
+      outline: 2px solid #c9cdd9;
+      border-radius: 3px;
+      color: #27334f !important;
+      cursor: auto !important;
+      outline-style: auto;
+    }
+  }
+
+  &-subtitle {
+    color: #a8b0c2;
+    margin-bottom: 35px;
+  }
+
+  .created-data,
+  .description,
+  .activity {
+    &-title {
+      text-transform: uppercase;
+      color: #a8b0c2;
+      margin-bottom: 15px;
+    }
+
+    &-value {
+      color: #525c72;
+      margin-bottom: 42px;
+    }
+  }
+
+  .description,
+  .activity {
+    &-text {
+      padding: 15px;
+      width: 100%;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 170%;
+      color: #525c72;
+      resize: none;
+      border: 1px solid #ebeff4;
+      border-radius: 5px;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #a8b0c2;
+      }
+    }
+  }
+}

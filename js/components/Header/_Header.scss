@@ -1,0 +1,41 @@
+.header {
+  min-height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 99;
+  width: -webkit-fill-available;
+
+  .wrapper {
+    padding: 20px 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1920px;
+  }
+
+  &__logo {
+    font-size: 26px;
+    font-style: normal;
+  }
+
+  &__search {
+    max-width: 670px;
+    height: 50px;
+
+    background: $white;
+    border: 1px solid #ebeff4;
+    border-radius: 5px;
+    flex: 1;
+    padding: 20px;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 19px;
+      color: #a8b0c2;
+    }
+  }
+}
